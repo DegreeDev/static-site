@@ -1,0 +1,17 @@
+version: 0.1
+
+phases:
+  install:
+    commands:
+      - npm install bower ember-cli ember-cli-deploy phantomjs-prebuilt nodemon -g
+  pre_build:
+    commands:
+      - npm install
+      - bower install
+      - ember test
+  build:
+    commands:
+      - ember build --environment=production
+  post_build:
+    commands:
+      - ember deploy production --activate=true

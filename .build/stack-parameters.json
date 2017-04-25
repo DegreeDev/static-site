@@ -1,0 +1,18 @@
+[
+  {
+    "ParameterKey": "SiteBucketName",
+    "ParameterValue": "savo-static-site-prod"
+  },
+  {
+    "ParameterKey": "LogBucketName",
+    "ParameterValue": "savo-static-site-prod-logs"
+  },
+  {
+    "ParameterKey": "IAMDeployRole",
+    "ParameterValue": "savo-aero-deploy"
+  },
+  {
+    "ParameterKey": "CertificateUUID",
+    "ParameterValue": "$ENV:AWS_CERT_GUID"
+  }
+]
